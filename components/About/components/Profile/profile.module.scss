@@ -1,0 +1,50 @@
+.about__profile {
+  width: 30%;
+  background: #151515;
+  padding: 120px 60px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background: url('./background.png')
+}
+
+.about__profile::before,
+.about__profile::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 340px;
+  right: -300px;
+  top: 0;
+  background: #219EE4;
+  opacity: 0.7;
+  filter: blur(300px);
+  z-index: 10;
+}
+
+.about__profile::after {
+  left: -300px;
+  bottom: 0;
+  background: rgba(237, 94, 22, 1);
+}
+
+.about__profileImage {
+  width: 100%;
+  position: relative;
+  z-index: 20;
+  box-shadow: 0px 0px 20px 6px rgb(21 21 21 / 70%);
+  border-radius: 2% 2% 0 0;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+    &__profile {
+      order: -1;
+      width: 100%;
+      padding: 40px;
+    }
+  }
+}

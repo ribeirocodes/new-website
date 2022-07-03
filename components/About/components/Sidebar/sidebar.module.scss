@@ -1,0 +1,35 @@
+.about__location {
+  margin: 40px auto;
+  font-size: 18px;
+}
+
+.about__sidebar img {
+  width: 18px;
+  vertical-align: middle;
+  margin-right: 15px
+}
+
+.about__linksItem {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  padding: 0 0 5px;
+}
+
+.about__linksItem:hover {
+  text-decoration: underline;
+}
+
+.about__linksItemEmail {
+  margin-top: 35px;
+}
+
+.about__title::after {
+  content: "";
+  display: inline-block;
+  width: 120px;
+  height: 1px;
+  background-color: #ffffff;
+  margin-left: 20px;
+  vertical-align: middle;
+}
