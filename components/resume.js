@@ -30,9 +30,9 @@ export default function Resume() {
             <p className={styles.subtitle}><span className="detail">Email me</span> or <span className="detail">send a message</span> through linkedin asking for the <span className="detail">password</span>.</p>
 
             <form className={styles.form}>
-              <input type="password" placeholder='password' />
+              <input type="password" placeholder='password' required />
 
-              <button href="#" class="hero__link" data-cursor>
+              <button>
                 <span class="hero__link-detail">
                   <img src={arrow.src} alt="arrow icon" />
                 </span>
