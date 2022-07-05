@@ -1,0 +1,145 @@
+.resume {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.stamp {
+  position: absolute;
+  right: 50px;
+  top: 60px;
+  animation: rotate infinite 10s linear;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0)
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg)
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title {
+  font-size: 38px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  max-width: 600px;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: 200;
+  margin-top: 24px;
+  max-width: 400px;
+}
+
+.word {
+  position: relative;
+  z-index: 12;
+}
+
+.back {
+  position: absolute;
+  font-family: "Kanit", sans-serif;
+  left: 0;
+  top: -200px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.dotted__word {
+  position: relative;
+  margin-left: 10px;
+
+  @media screen and (max-width: 900px) {
+    display: inline-block;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 0;
+    margin: 0 auto;
+    z-index: 1;
+    width: calc(100% + 20px);
+    height: 50px;
+    border: 3px solid #FF8A1F;
+    border-radius: 50%;
+  }
+}
+
+.form {
+  margin-top: 60px;
+  display: flex;
+
+  input,
+  button {
+    font-family: "Kanit", sans-serif;
+  }
+
+  button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.2);
+    margin-right: 18px;
+    border: none;
+  }
+
+  button img {
+    position: relative;
+    transition: 300ms ease all;
+    left: 0;
+  }
+
+  button:hover img {
+    left: 5px;
+  }
+
+  input[type="password"] {
+    width: 220px;
+    background: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 18px;
+    font-weight: 200;
+    color: white;
+    padding-bottom: 12px;
+
+    &::placeholder {
+      font-size: 18px;
+      font-weight: 200;
+      color: white;
+    }
+  }
+}

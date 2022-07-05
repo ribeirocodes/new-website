@@ -1,6 +1,6 @@
 import styles from './hero.module.scss'
 
-import stamp from '/public/images/stamp-2.png';
+import stamp from '/public/images/stamp.png';
 import fire from '/public/images/fire.svg';
 import background from '/public/images/background.png'
 

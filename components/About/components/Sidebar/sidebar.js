@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import styles from "./sidebar.module.scss";
 
 import linkedin from '/public/images/icons/linkedin.svg';
@@ -29,9 +30,11 @@ export default function Sidebar() {
         <a data-cursor href="#" className={styles.about__linksItem}>
           <img src={twitter.src} alt="" />Twitter
         </a>
-        <a data-cursor href="#" className={styles.about__linksItem}>
-          <img src={resume.src} alt="" />Resume
-        </a>
+        <Link href="/resume">
+          <a data-cursor className={styles.about__linksItem}>
+            <img src={resume.src} alt="" />Resume
+          </a>
+        </Link>
 
         <a data-cursor href="#" className={`${styles.about__linksItem} ${styles.about__linksItemEmail}`}
         >
